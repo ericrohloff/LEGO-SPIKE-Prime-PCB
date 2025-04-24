@@ -31,6 +31,53 @@ and example using the SPIKE LED matrix.
 -   Connect the PCB to the SPIKE Prime in Port B or E and the Xiao ESP32-C3 to
     the PCB.
 
-### Software Setup
+### Software Setup - SPIKE
 
--   Download the Python Files 'port.py' and 'main.py'
+-   Download mboot.dfu and firmware.dfu from the repository.
+-   Put SPIKE into DFU mode by holding the bluetooth button and plugging in the
+    USB cable. The LED will flash Rainbow colors.
+-   Download the Python Files 'port.py' and'main.py' from the repository.
+-   Navigate to the directory where the files are located and run the following
+    command: ` dfu-util --alt 0 -D firmware.dfu`
+-   After the firmware is flashed, run the following command:
+    ` dfu-util --alt 1 -D mboot.dfu`
+-   After the mboot is flashed, unplug the SPIKE and plug it back in while
+    holding the left button. The SPIKE will flash letters on the LED matrix.
+    Keep holding the left button until the letter 'F' appears
+-   After the letter 'F' appears, connect the SPIKE to your computer and add the
+    python files to the SPIKE using Thonny. The files should be in the root
+    directory of the SPIKE.
+
+### Software Setup - Xiao ESP32-C3
+
+-   Flash micropython to the Xiao ESP32-C3 using your favorite version of
+    micropython.
+-   Download the 'main2.py' from the repository.
+-   Connect the Xiao ESP32-C3 to your computer and add the 'main2.py' file to
+    the root directory of the Xiao ESP32-C3 using Thonny and rename it to
+    'main.py'.
+
+### Using the SPIKE LED Matrix Demo
+
+-   Download the 'light_example.py' and 'lights.py' files from the repository.
+-   Connect the SPIKE to your computer and run the 'light_example.py' file using
+    Thonny.
+-   Connect the PCB to the SPIKE and the Xiao ESP32-C3 to the PCB.
+-   Connect your favorite device to the wifi network 'SPIKE-UART' with the
+    password shown in the 'main2.py' file.
+-   Open a web browser and navigate to http://192.168.4.1
+-   Send a message to the SPIKE using the text box and click send. The message
+    will be displayed on the LED matrix.
+
+## Files
+
+-   'spike-prime-pcb.zip' - The PCB files
+-   'spike-prime-pcb.dxf' - The acrylic alignment plate files
+-   'mboot.dfu' - The mboot file for the SPIKE
+-   'firmware.dfu' - The firmware file for the SPIKE
+-   'port.py' - The port file for the SPIKE
+-   'main.py' - The main file for the SPIKE
+-   'main2.py' - The main file for the Xiao ESP32-C3 (rename to main.py)
+-   'light_example.py' - The light example file for the SPIKE
+-   'lights.py' - The lights file for the SPIKE
+-   'README.md' - This file
