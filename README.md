@@ -5,6 +5,8 @@ This allows for UART communication between the SPIKE and a Seeed Studio Xiao
 ESP32-C3. The repository contains instructions for how to set up the device and
 and example using the SPIKE LED matrix.
 
+![screenshot](pcb.png)
+
 ## Hardware
 
 -   LEGO SPIKE Prime
@@ -38,9 +40,9 @@ and example using the SPIKE LED matrix.
     USB cable. The LED will flash Rainbow colors.
 -   Download the Python Files 'port.py' and'main.py' from the repository.
 -   Navigate to the directory where the files are located and run the following
-    command: ` dfu-util --alt 0 -D firmware.dfu`
+    command: `dfu-util --alt 0 -D firmware.dfu`
 -   After the firmware is flashed, run the following command:
-    ` dfu-util --alt 1 -D mboot.dfu`
+    `dfu-util --alt 1 -D mboot.dfu`
 -   After the mboot is flashed, unplug the SPIKE and plug it back in while
     holding the left button. The SPIKE will flash letters on the LED matrix.
     Keep holding the left button until the letter 'F' appears
@@ -81,3 +83,4 @@ and example using the SPIKE LED matrix.
 -   'light_example.py' - The light example file for the SPIKE
 -   'lights.py' - The lights file for the SPIKE
 -   'README.md' - This file
+-   'pcb.png' - The PCB file
