@@ -73,14 +73,14 @@ and example using the SPIKE LED matrix.
 
 ## Files
 
--   'spike-prime-pcb.zip' - The PCB files
--   'spike-prime-pcb.dxf' - The acrylic alignment plate files
--   'mboot.dfu' - The mboot file for the SPIKE
 -   'firmware.dfu' - The firmware file for the SPIKE
--   'port.py' - The port file for the SPIKE
--   'main.py' - The main file for the SPIKE
--   'main2.py' - The main file for the Xiao ESP32-C3 (rename to main.py)
 -   'light_example.py' - The light example file for the SPIKE
 -   'lights.py' - The lights file for the SPIKE
+-   'main.py' - The main file for the SPIKE
+-   'main2.py' - The main file for the Xiao ESP32-C3 (rename to main.py)
+-   'mboot.dfu' - The mboot file for the SPIKE
+-   'pcb.png' - PCB Image
+-   'port.py' - The port file for the SPIKE
 -   'README.md' - This file
--   'pcb.png' - The PCB file
+-   'spike-prime-pcb.dxf' - The acrylic alignment plate files
+-   'spike-prime-pcb.zip' - The PCB files
