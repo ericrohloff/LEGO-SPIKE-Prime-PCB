@@ -82,5 +82,5 @@ and example using the SPIKE LED matrix.
 -   'pcb.png' - PCB Image
 -   'port.py' - The port file for the SPIKE
 -   'README.md' - This file
--   'spike-prime-pcb.dxf' - The acrylic alignment plate files
+-   'spike-prime-pcb.svg' - The acrylic alignment plate files
 -   'spike-prime-pcb.zip' - The PCB files
